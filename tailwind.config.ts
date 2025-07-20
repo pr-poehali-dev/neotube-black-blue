@@ -61,6 +61,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				neotube: {
+					black: '#000000',
+					'dark-blue': '#1E40AF',
+					'electric-blue': '#3B82F6',
+					'lightning': '#60A5FA',
+					white: '#FFFFFF',
+					'gray-900': '#111827',
+					'gray-800': '#1F2937',
+					'gray-700': '#374151'
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,40 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'electric-pulse': {
+					'0%, 100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						opacity: '0.7',
+						transform: 'scale(1.05)'
+					}
+				},
+				'lightning-flash': {
+					'0%, 100%': {
+						opacity: '0.2'
+					},
+					'50%': {
+						opacity: '1'
+					}
+				},
+				'hover-scale': {
+					'0%': {
+						transform: 'scale(1)'
+					},
+					'100%': {
+						transform: 'scale(1.05)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'electric-pulse': 'electric-pulse 2s ease-in-out infinite',
+				'lightning-flash': 'lightning-flash 1.5s ease-in-out infinite',
+				'hover-scale': 'hover-scale 0.2s ease-out'
 			}
 		}
 	},
